@@ -3,6 +3,7 @@ import { Present } from '../../models/present.model';
 import { PresentService } from '../../services/presents.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ConfirmationService, MessageService } from 'primeng/api';
+import { DonorsService } from 'src/app/services/donors.service';
 
 
 @Component({
@@ -14,12 +15,14 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 
 export class PresentsListComponent implements OnInit{
   
-  constructor(private presentSrv:PresentService, private router: Router,private activetedRoute: ActivatedRoute,
+  constructor(private presentSrv:PresentService, private router: Router,private activetedRoute: ActivatedRoute,private donServ:DonorsService,
    private confirmationService:ConfirmationService,private messageService:MessageService) {}
 
   ngOnInit(): void {
     this.presentSrv.callToGetPresent$.subscribe(p=>
-      this.presentSrv.getPresente().subscribe(p=>this.presentsList=p)
+      this.presentSrv.getPresente().subscribe(p=>
+        {let upProd=p.map(pr=>{this.donServ.getById(pr.donor).subscribe(d=>{pr.donor=d.firstName});return pr});
+      this.presentsList=upProd;})
       )
   }
   presentsList:Present[]=[]

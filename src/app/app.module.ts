@@ -30,7 +30,7 @@ import { PresentsPurchaseComponent } from './components/presents-purchase/presen
 import { CartComponent } from './components/cart/cart.component';
 import { RandomComponent } from './components/random/random.component';
 import { ReportComponent } from './components/report/report.component';
-
+import { DataViewModule } from 'primeng/dataview';
 
 // import { ImageUploadComponent } from './components/image-upload/image-upload.component';
 // import { ImageDisplayComponent } from './components/image-display/image-display.component';
@@ -72,7 +72,8 @@ import { ReportComponent } from './components/report/report.component';
         CalendarModule,
         FileUploadModule,
         ReactiveFormsModule,
-        RouterModule
+        RouterModule,
+        DataViewModule
  
   ],
   providers: [ConfirmationService],

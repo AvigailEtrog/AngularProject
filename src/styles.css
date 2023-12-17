@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
  body{
-   direction: rtl;
+   direction:ltr;
    padding: 50px;
    font-family: 'cursive';
    font-size: medium;
@@ -14,4 +14,16 @@ input{
 .p-datatable .p-datatable-thead > tr > th {
    text-align: center  !important;
 }
+.p-selectbutton .p-button.p-highlight{
+   background-color:orange;
+   border-color: orange;
+}
+.surface-border {
+   border-color: green;
+}
+.surface-card{
+   background-color: green;
+}
+
+
 

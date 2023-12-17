@@ -11,6 +11,7 @@ import { ProductCartService } from 'src/app/services/product-cart.service';
 })
 export class PresentsPurchaseComponent {
 presentsList:Present[]=[]
+layout:string="";
 constructor(private presSrv:PresentService,private prodCartSrv:ProductCartService,private router: Router,private activetedRoute: ActivatedRoute) {}
 ngOnInit(){
 this.presSrv.getPresente().subscribe(presents=>this.presentsList=presents);

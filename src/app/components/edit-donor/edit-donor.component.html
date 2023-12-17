@@ -1,0 +1,54 @@
+<p-dialog (onHide)="navigateDonors()" [style]="{width: '450px'}" header="Donor Details" [modal]="true"  [(visible)]="isDialog"
+styleClass="p-fluid"> 
+ <ng-template pTemplate="content" [formGroup]="frmDonor">
+        <div class="p-field">
+            <div><label for="id">Id</label></div> 
+            <input type="text"  pInputText id="id"  formControlName="id" required autofocus/>    
+            <div>
+            <small class="p-error" *ngIf="frmDonor.controls['id'].errors && frmDonor.controls['id'].errors['required']">Id is required.</small>
+            <small class="p-error" *ngIf="frmDonor.controls['id'].errors && frmDonor.controls['id'].errors['maxLength']">Id must be less than 10 chars.</small>
+            <small class="p-error" *ngIf="frmDonor.controls['id'].errors && frmDonor.controls['id'].errors['minLength']">Id must be more than 9 chars.</small>
+            </div>  
+        </div>
+
+        <div class="p-field">    
+            <div><label for="firstName">First Name</label></div>
+            <input type="text"  pInputText id="firstName"  formControlName="firstName" required autofocus/>
+            <div>
+            <small class="p-error" *ngIf="frmDonor.controls['firstName'].errors && frmDonor.controls['firstName'].errors['required']">First Name is required.</small>
+            <small class="p-error" *ngIf="frmDonor.controls['firstName'].errors && frmDonor.controls['firstName'].errors['maxlength']">First Name must be less than 20 chars.</small>
+            </div>
+        </div>
+
+        <div class="p-field">
+            <div><label for="lastName">Last Name</label></div>
+            <input type="text"  pInputText id="lastName"  formControlName="lastName" required autofocus/>
+            <div>
+            <small class="p-error" *ngIf="frmDonor.controls['lastName'].errors && frmDonor.controls['lastName'].errors['required']">Last Name is required.</small>
+            <small class="p-error" *ngIf="frmDonor.controls['lastName'].errors && frmDonor.controls['lastName'].errors['maxLength']">Last Name must be less than 20 chars.</small>
+            </div>
+        </div>
+
+        <div class="p-field">
+            <div><label for="address">Address</label></div>
+            <input type="text"  pInputText id="address"  formControlName="address" />
+            <div>
+            <small class="p-error" *ngIf="frmDonor.controls['address'].errors && frmDonor.controls['address'].errors['required']">Address name mustn't be more than 30 chars</small>
+            </div>
+        </div>
+   
+        <div class="p-field">
+            <div><label for="age">Age</label></div>
+            <input type="number"  pInputText id="age"  formControlName="age" required autofocus/>         
+            <div>
+            <small class="p-error" *ngIf="frmDonor.controls['age'].errors && frmDonor.controls['age'].errors['required']">age is required.</small>
+            <small class="p-error" *ngIf="frmDonor.controls['age'].errors && frmDonor.controls['age'].errors['min']">your age must be more than 10</small>
+            <small class="p-error" *ngIf="frmDonor.controls['age'].errors && frmDonor.controls['age'].errors['max']">your age must be less than 120</small>
+            </div>  
+        </div>
+</ng-template>
+<ng-template pTemplate="footer">
+    <p-button  severity="warning" label="Cancel" icon="pi pi-times" class="p-button-text" [text]="true" [raised]="true" (click)="navigateDonors()"></p-button>
+    <p-button [disabled]="frmDonor.invalid" severity="warning" label="Save" icon="pi pi-check" [text]="true" [raised]="true" class="p-button-text" (click)="send()"></p-button>
+</ng-template>
+</p-dialog>

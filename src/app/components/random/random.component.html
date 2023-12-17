@@ -1,0 +1,16 @@
+<div class="my-css" >
+    <p-toolbar styleClass="mb-4" *ngFor="let item of presentsList" [style]="{borderColor:'green',color:'green',boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',
+    fontFamily: 'cursive' ,margin: '15px',textAlign: 'center',fontSize: '40px',
+    padding: '30px', height: '170px',textAlign:'left'}" >
+          <span>{{item.id}}</span>
+          <span>{{item.name}}</span>
+          <span>{{item.price}}$</span>
+          <!-- <span>{{winnersList[item.id].firstName}}  {{winnersList[item.id].lastName}}</span> -->
+          <button pButton pRipple label="  Lottery " icon="pi pi-flag-fill" class="p-button-success mr-2" (click)="getWinner(item)"></button>
+    </p-toolbar>
+    <button pButton pRipple label="Get report" icon="pi pi-flag-fill" class="p-button-success mr-2" (click)="getReport()"></button>
+</div>
+
+
+
+

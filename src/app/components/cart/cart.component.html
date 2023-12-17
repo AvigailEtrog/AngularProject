@@ -1,0 +1,15 @@
+<button pButton pRipple title="for paying" icon="pi pi-credit-card" class="p-button-success mr-2" (click)="paying()"></button>
+<button pButton pRipple title="delete" icon="pi pi-trash" class="p-button-success mr-2" (click)="deleteAll()"></button>
+<button pButton pRipple title="back to presents purchase" icon="pi pi-backward" class="p-button-success mr-2" (click)="back()"></button>
+<div class="my-css" >
+    <p-toolbar styleClass="mb-6" *ngFor="let item of presentsInCart" [style]="{borderColor:'green',color:'green',boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',fontFamily: 'cursive' ,width: '215px',margin: '15px',textAlign: 'center',
+     padding: '10px',display:'flex',float: 'left', height: '200px',textAlign:'center'}" >
+          <span class="title">{{item.present.name}}</span>
+          <span>Present Price :{{item.present.price}}</span>
+          <span>Quantity:{{item.quantity}}</span>
+          <button pButton pRipple label="Delete" icon="pi pi-plus" class="p-button-success mr-2" (click)="DeleteFromoCart(item)"></button>
+    </p-toolbar>
+    <h1 *ngIf="presentsInCart.length==0">There is no presents in your cart, please return back↩</h1>
+</div>
+
+<app-payment [(isDialog)]="isDialog"></app-payment>

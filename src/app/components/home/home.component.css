@@ -1,0 +1,17 @@
+/* div{
+    padding: 50px;
+    font-size: 80px;
+    text-align: center;
+    color:'green';
+    font-family: 'cursive'
+} */
+div  {
+    border-color: green;
+    color: green;
+    font-family: cursive;
+    margin: 15px;
+    text-align: center;
+    font-size: 60px;
+    padding: 30px;
+    height: 170px;
+}

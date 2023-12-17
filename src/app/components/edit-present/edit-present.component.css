@@ -1,0 +1,47 @@
+
+.bold{
+    font-weight: bold;
+}
+
+
+.form-group {
+    padding-bottom: 10px;
+}
+
+.has-error{
+    border-width: 2px;
+    border-color: red;
+    border-style: dotted;
+}
+
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-toolbar{
+    height: 200px;
+}
+.my-css{
+    height: calc(100vh - 300px);
+    width: 80vw;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    direction: rtl;
+}
+
+
+.p-component, .p-component * {
+    box-sizing: border-box;
+}
+.p-error {
+    color: orange;
+}
+.p-inputtext.ng-dirty.ng-invalid {
+    border-color: orange;
+}
+p-inputnumber.ng-dirty.ng-invalid > .p-inputnumber > .p-inputtext {
+    border-color: orange;
+}

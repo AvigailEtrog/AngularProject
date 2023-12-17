@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+ body{
+   direction: rtl;
+   padding: 50px;
+   font-family: 'cursive';
+   font-size: medium;
+   text-align: left;
+} 
+
+input{
+   text-align: left;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+   text-align: center  !important;
+}
+

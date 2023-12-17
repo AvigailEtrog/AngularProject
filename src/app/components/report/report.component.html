@@ -1,0 +1,31 @@
+
+<div class="my-css" >
+    <p-table  #dt  [value] = "lotteries" [rows]="10" [paginator]="true" styleClass="p-datatable-gridlines"  [tableStyle]="{ 'min-width': '50rem'}"
+    [rowHover]="true"  currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
+    [showCurrentPageReport]="true" >
+    <ng-template  pTemplate="caption">
+        <div class="flex align-items-center justify-content-between">
+            <h5 class="m-2">Results</h5>
+        </div>
+    </ng-template >
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="presentName">Present</th>
+            <th pSortableColumn="userName">Winner</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item >
+            <tr>
+                <td [style]="{textAlign: 'center','color':'green'}">{{item.present.name}}</td>
+                <td [style]="{textAlign: 'center','color':'green'}">{{item.user.userName}}</td>
+            </tr>
+    </ng-template>
+    <ng-template pTemplate="summary" > 
+        <button pButton pRipple icon="pi pi-replay" class="p-button-rounded p-button-warning" (click)="back()"></button>
+    </ng-template>
+    </p-table>
+    <br>
+</div>
+
+
+

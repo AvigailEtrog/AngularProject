@@ -1,0 +1,23 @@
+.p-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+    .my-toolbar{
+        height: 300px;
+    }
+    .my-css{
+        height: calc(100vh - 300px);
+        width: 80vw;
+        overflow: auto;
+        margin-left: auto;
+        margin-right: auto;
+        direction: ltr;
+    }
+    .title{
+        font-size: 30px;
+    }
+
+

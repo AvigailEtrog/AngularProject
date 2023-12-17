@@ -1,0 +1,75 @@
+<p-dialog  *ngIf="finish==false" dir="ltr" [(visible)]="isDialog" (onHide)="close()" styleClass="p-fluid" [style]="{width: '450px'}" header="Payment" [modal]="true">
+    <ng-template  pTemplate="content" [formGroup]="frmPayment">
+        <h2>Your total sum is: {{payment}}$</h2>
+        <div><span [style]="{fontWeight:'bold'}">User Deatails</span></div>
+        <div  class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-user"></i>
+            </span>
+            <input pInputText id="userName" formControlName="userName" placeholder="Username" />
+        </div>
+        <div  class="p-inputgroup">
+             <span class="p-inputgroup-addon">
+                <i class="pi pi-phone"></i>
+            </span>
+            <input pInputText id="phonNumber" formControlName="phonNumber" placeholder="Phone Number" />
+        </div>
+        <div  class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-at"></i>
+            </span>
+            <input formControlName="email" id="email" pInputText placeholder="Email" />
+        </div>
+        <div  class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-home"></i>
+            </span>
+            <input formControlName="address" id="address" pInputText placeholder="Address" />
+        </div>
+        <div><span [style]="{fontWeight:'bold'}">Card Deatails</span></div>
+        <div  class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-credit-card"></i>
+            </span>
+            <input formControlName="cardNumber" id="cardNumber" pInputText placeholder="Card Number" />
+        </div>
+        <div  class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-ellipsis-h"></i>
+            </span>
+            <input formControlName="cvc" pInputText placeholder="cvc" />
+        </div>
+        <div  class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-calendar"></i>
+            </span>
+            <input formControlName="validity" pInputText placeholder="cf/vf" />
+        </div>
+        <div  class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-user-edit"></i>
+            </span>
+            <input formControlName="identity" pInputText placeholder="Owner's Card Identity" />
+        </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+        <p-button [disabled]="frmPayment.invalid" severity="warning" label="Payment" [text]="true" [raised]="true"  icon="pi pi-check" (click)="sendOrder()"></p-button>
+        <p-button  severity="warning" label="Cancel" [text]="true" [raised]="true"  icon="pi pi-times" (click)="close()"></p-button>
+    </ng-template>
+</p-dialog>
+
+
+<p-dialog   dir="ltr" [(visible)]="finish" (onHide)="close()" styleClass="p-fluid" [style]="{width: '450px'}" header="Payment" [modal]="true">
+   <div *ngIf="!orderFinish">
+    <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+    <span>Cheching your detailes, please wait!</span>
+   </div>
+   <div *ngIf="orderFinish">
+    <span icon="pi pi-verified">Your order {{id}} created succfully</span>
+    <div>
+    <p-button  severity="warning" label="ok" [style]="{width:'106px'}" [text]="true" [raised]="true"  icon="pi pi-times" (click)="closeOrder()"></p-button>
+   </div>
+</div>
+</p-dialog>
+
+

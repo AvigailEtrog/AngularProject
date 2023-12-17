@@ -1,0 +1,105 @@
+M:\Angular\Server\Server\bin\Debug\net6.0\appsettings.Development.json
+M:\Angular\Server\Server\bin\Debug\net6.0\appsettings.json
+M:\Angular\Server\Server\bin\Debug\net6.0\Server.exe
+M:\Angular\Server\Server\bin\Debug\net6.0\Server.deps.json
+M:\Angular\Server\Server\bin\Debug\net6.0\Server.runtimeconfig.json
+M:\Angular\Server\Server\bin\Debug\net6.0\Server.dll
+M:\Angular\Server\Server\bin\Debug\net6.0\Server.pdb
+M:\Angular\Server\Server\bin\Debug\net6.0\Microsoft.OpenApi.dll
+M:\Angular\Server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+M:\Angular\Server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+M:\Angular\Server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.csproj.AssemblyReference.cache
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.AssemblyInfoInputs.cache
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.AssemblyInfo.cs
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.csproj.CoreCompileInputs.cache
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.MvcApplicationPartsAssemblyInfo.cs
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.MvcApplicationPartsAssemblyInfo.cache
+M:\Angular\Server\Server\obj\Debug\net6.0\staticwebassets\msbuild.Server.Microsoft.AspNetCore.StaticWebAssets.props
+M:\Angular\Server\Server\obj\Debug\net6.0\staticwebassets\msbuild.build.Server.props
+M:\Angular\Server\Server\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Server.props
+M:\Angular\Server\Server\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Server.props
+M:\Angular\Server\Server\obj\Debug\net6.0\staticwebassets.pack.json
+M:\Angular\Server\Server\obj\Debug\net6.0\staticwebassets.build.json
+M:\Angular\Server\Server\obj\Debug\net6.0\staticwebassets.development.json
+M:\Angular\Server\Server\obj\Debug\net6.0\scopedcss\bundle\Server.styles.css
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.csproj.CopyComplete
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.dll
+M:\Angular\Server\Server\obj\Debug\net6.0\refint\Server.dll
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.pdb
+M:\Angular\Server\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
+M:\Angular\Server\Server\obj\Debug\net6.0\ref\Server.dll
+M:\Angular\server\Server\bin\Debug\net6.0\Fare.dll
+M:\Angular\server\Server\bin\Debug\net6.0\RandomDataGenerator.dll
+M:\Angular\server\Server\bin\Debug\net6.0\Stef.Validation.dll
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\appsettings.Development.json
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\appsettings.json
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Server.exe
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Server.deps.json
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Server.runtimeconfig.json
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Server.dll
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Server.pdb
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Fare.dll
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Microsoft.OpenApi.dll
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\RandomDataGenerator.dll
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Stef.Validation.dll
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+J:\הנדסת תוכנה\ttt\server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.csproj.AssemblyReference.cache
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.AssemblyInfoInputs.cache
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.AssemblyInfo.cs
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.csproj.CoreCompileInputs.cache
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.MvcApplicationPartsAssemblyInfo.cs
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.MvcApplicationPartsAssemblyInfo.cache
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\staticwebassets\msbuild.Server.Microsoft.AspNetCore.StaticWebAssets.props
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\staticwebassets\msbuild.build.Server.props
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Server.props
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Server.props
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\staticwebassets.pack.json
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\staticwebassets.build.json
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\staticwebassets.development.json
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\scopedcss\bundle\Server.styles.css
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.csproj.CopyComplete
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.dll
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\refint\Server.dll
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.pdb
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
+J:\הנדסת תוכנה\ttt\server\Server\obj\Debug\net6.0\ref\Server.dll
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\appsettings.Development.json
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\appsettings.json
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Server.exe
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Server.deps.json
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Server.runtimeconfig.json
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Server.dll
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Server.pdb
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Fare.dll
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Microsoft.OpenApi.dll
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\RandomDataGenerator.dll
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Stef.Validation.dll
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+J:\הנדסת תוכנה\project\server\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.csproj.AssemblyReference.cache
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.AssemblyInfoInputs.cache
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.AssemblyInfo.cs
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.csproj.CoreCompileInputs.cache
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.MvcApplicationPartsAssemblyInfo.cs
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.MvcApplicationPartsAssemblyInfo.cache
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\staticwebassets\msbuild.Server.Microsoft.AspNetCore.StaticWebAssets.props
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\staticwebassets\msbuild.build.Server.props
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Server.props
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Server.props
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\staticwebassets.pack.json
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\staticwebassets.build.json
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\staticwebassets.development.json
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\scopedcss\bundle\Server.styles.css
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.csproj.CopyComplete
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.dll
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\refint\Server.dll
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.pdb
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\Server.genruntimeconfig.cache
+J:\הנדסת תוכנה\project\server\Server\obj\Debug\net6.0\ref\Server.dll

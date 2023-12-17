@@ -1,0 +1,33 @@
+.p-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+   
+}
+/* .d{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    padding: 15px;
+    float: left;
+    height: 550px;
+    margin: 6px;
+} */
+
+
+.my-toolbar{
+    height: 200px;
+}
+.my-css{
+    height: calc(100vh - 300px);
+    width: 80vw;
+    overflow: auto;
+    margin-left: auto;
+    margin-right: auto;
+    direction: ltr;
+}
+

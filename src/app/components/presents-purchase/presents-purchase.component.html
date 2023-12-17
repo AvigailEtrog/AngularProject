@@ -1,0 +1,16 @@
+
+
+
+
+
+<div class="my-css" >
+      <button pButton pRipple title="my cart" icon="pi pi-cart-plus" class="p-button-success mr-2" (click)="MyCart()" ></button>
+      <p-toolbar styleClass="mb-4" *ngFor="let item of presentsList" [style]="{borderColor:'green',color:'green',boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',fontFamily: 'cursive' ,width: '250px',margin: '15px',textAlign: 'center',
+      padding: '10px',float: 'left', height: '170px',textAlign:'center'}" >
+            <span>Present Id :{{item.id}}</span>
+            <span>Present Name :{{item.name}}</span>
+            <span>Present Price :{{item.price}}</span>
+            <button pButton pRipple label="Add" icon="pi pi-plus" class="p-button-success mr-2" (click)="AddToCart(item)"></button>
+      </p-toolbar>
+
+</div>

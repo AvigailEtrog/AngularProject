@@ -1,0 +1,69 @@
+<p-toolbar styleClass="mb-4">
+    <ng-template pTemplate="left">
+        <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success mr-2"
+        (click)="addDonor()" ></button>
+        <button pButton pRipple  icon="pi pi-trash" class="p-button-danger"
+        (click)="deleteSelectedDonors()" [disabled]="!selectedDonors || !selectedDonors.length"></button>
+    </ng-template>
+    <ng-template pTemplate="right">
+        <button pButton pRipple label="Export" icon="pi pi-upload" class="p-button-success"></button>
+    </ng-template>
+</p-toolbar>
+
+<div class="my-css" >
+    <p-table #dt  [value] = "donorsList" [rows]="3" [paginator]="true"
+    [globalFilterFields]="['id','firstName','lastName','address','age','representative.name']" [(selection)]="selectedDonors"
+    [rowHover]="true" dataKey="id" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" 
+    [showCurrentPageReport]="true" >
+    <ng-template pTemplate="caption">
+        <div class="flex align-items-center justify-content-between">
+            <h5 class="m-0">Manage Donors</h5>
+            <span class="p-input-icon-left">
+                <i class="pi pi-search"></i>
+                <input pInputText type="text"
+                    placeholder="Search..." (input)="dt.filterGlobal( $event.target.value, 'contains')"/>
+            </span>
+        </div>
+    </ng-template >
+    <ng-template pTemplate="header">
+        <tr>
+            <th style="width: 3rem">
+                <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+            </th>
+            <th pSortableColumn="id">Id<p-sortIcon field="id"></p-sortIcon></th>
+            <th pSortableColumn="firstName">First Name<p-sortIcon field="firstName"></p-sortIcon></th>
+            <th pSortableColumn="lastName">Last Name<p-sortIcon field="lastName"></p-sortIcon></th>
+            <th pSortableColumn="address">Address<p-sortIcon field="address"></p-sortIcon></th>
+            <th pSortableColumn="age">Age<p-sortIcon field="age"></p-sortIcon></th>
+            <th></th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-item >
+            <tr   >
+                <td>
+                    <p-tableCheckbox [value]="item"></p-tableCheckbox>
+                </td>
+                <td>{{item.id}}</td>
+                <td>{{item.firstName}}</td>
+                <td>{{item.lastName}}</td>
+                <td>{{item.address}}</td>
+                <td>{{item.age}}</td>
+                <td>
+                    <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2"
+                    (click)="saveDonor(item.id)"></button>
+                    <button pButton pRipple icon="pi pi-trash" class="p-button-rounded p-button-warning"
+                    (click)="delete(item)"></button>
+                </td>
+            </tr>
+      
+    </ng-template>
+    <ng-template pTemplate="summary">
+        <div class="flex align-items-center justify-content-between">
+            In total there are {{ donorsList ? donorsList.length : 0 }} products.
+        </div>
+    </ng-template>
+    </p-table>
+    <br>
+    <p-confirmDialog [style]="{width: '450px'}"></p-confirmDialog> 
+    <router-outlet></router-outlet>
+</div>

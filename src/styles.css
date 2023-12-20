@@ -24,6 +24,54 @@ input{
 .surface-card{
    background-color: green;
 }
+.p-inputgroup .p-inputtext, .p-fluid .p-inputgroup .p-inputtext{
+   width: 146%;
+}
 
 
 
+.p-inputgroup-addon:last-child, .p-inputgroup button:last-child, .p-inputgroup input:last-child, .p-inputgroup > .p-inputwrapper:last-child > .p-component, .p-inputgroup > .p-inputwrapper:last-child > .p-component > .p-inputtext {
+   border-top-right-radius: 1px;
+   border-bottom-right-radius: 1px;
+}
+.p-inputgroup-addon:first-child, .p-inputgroup button:first-child, .p-inputgroup input:first-child, .p-inputgroup > .p-inputwrapper:first-child > .p-component, .p-inputgroup > .p-inputwrapper:first-child > .p-component > .p-inputtext {
+   border-top-left-radius: 1px;
+   border-bottom-left-radius: 1px;
+}
+
+
+.p-inputgroup-addon:first-child, .p-inputgroup button:first-child, .p-inputgroup input:first-child, .p-inputgroup > .p-inputwrapper:first-child > .p-component, .p-inputgroup > .p-inputwrapper:first-child > .p-component > .p-inputtext {
+   border-top-left-radius: 1px;
+   border-bottom-left-radius: 1px;
+   border-bottom-right-radius: 1px;
+   border-top-right-radius: 1px;
+}
+
+element.style {
+}
+.p-inputgroup .p-inputtext, .p-fluid .p-inputgroup .p-inputtext {
+    width: 146%;
+}
+.p-inputgroup-addon:first-child, .p-inputgroup button:first-child, .p-inputgroup input:first-child, .p-inputgroup > .p-inputwrapper:first-child > .p-component, .p-inputgroup > .p-inputwrapper:first-child > .p-component > .p-inputtext {
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 1px;
+}
+.p-inputgroup-addon:first-child, .p-inputgroup button:first-child, .p-inputgroup input:first-child, .p-inputgroup > .p-inputwrapper:first-child > .p-component, .p-inputgroup > .p-inputwrapper:first-child > .p-component > .p-inputtext {
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+.p-inputgroup-addon:last-child, .p-inputgroup button:last-child, .p-inputgroup input:last-child, .p-inputgroup > .p-inputwrapper:last-child > .p-component, .p-inputgroup > .p-inputwrapper:last-child > .p-component > .p-inputtext {
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+input {
+    text-align: left;
+}
+p-inputmask.ng-dirty.ng-invalid > .p-inputtext{
+   border-color: orange;
+}
+p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
+   border-color: orange;
+}

@@ -3,4 +3,5 @@ export class Present{
     name:string='';
     donor :string='';
     price:number=10;
+    Image:string='';
 }

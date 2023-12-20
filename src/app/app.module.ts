@@ -31,7 +31,8 @@ import { CartComponent } from './components/cart/cart.component';
 import { RandomComponent } from './components/random/random.component';
 import { ReportComponent } from './components/report/report.component';
 import { DataViewModule } from 'primeng/dataview';
-
+import { InputMaskModule } from 'primeng/inputmask';
+import { KeyFilterModule } from 'primeng/keyfilter';
 // import { ImageUploadComponent } from './components/image-upload/image-upload.component';
 // import { ImageDisplayComponent } from './components/image-display/image-display.component';
 
@@ -73,8 +74,9 @@ import { DataViewModule } from 'primeng/dataview';
         FileUploadModule,
         ReactiveFormsModule,
         RouterModule,
-        DataViewModule
- 
+        DataViewModule,
+        InputMaskModule,
+        KeyFilterModule
   ],
   providers: [ConfirmationService],
   bootstrap: [AppComponent]

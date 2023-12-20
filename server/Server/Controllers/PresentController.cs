@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
 using Server.Models;
 using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,7 +15,7 @@ namespace Server.Controllers
     {
         static List<Present> presentsList = new List<Present>() 
         {
-            new Present() { Id = 1, Name = "apartment", Donor = "32644789", Price = 50 } ,
+            new Present() { Id = 1, Name = "apartment", Donor = "32644789", Price = 50,Image="assets/image/בית.jpg" } ,
             new Present() { Id = 2, Name = "Frizer", Donor = "76556777", Price = 10 } ,
             new Present() { Id = 3, Name = "Computer", Donor = "54454555", Price = 20 },
             new Present() { Id = 4, Name = "Camera", Donor = "76556777", Price = 30 },

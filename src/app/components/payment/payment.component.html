@@ -13,9 +13,10 @@
              <span class="p-inputgroup-addon">
                 <i class="pi pi-phone"></i>
             </span>
-            <p-inputMask mask="99-9999999" id="phonNumber" formControlName="phonNumber" placeholder="PhonNumber"></p-inputMask>
+            <input formControlName="phonNumber" id="phonNumber" pInputText placeholder="PhonNumber" pKeyFilter="int"/>
         </div>
-        <small class="p-error" *ngIf="frmPayment.controls['userName'].errors && frmPayment.controls['userName'].errors['required']">PhonNumber is required.</small>
+        <small class="p-error" *ngIf="frmPayment.controls['phonNumber'].errors && frmPayment.controls['phonNumber'].errors['required']">PhonNumber is required.</small>
+        <small class="p-error" *ngIf="!frmPayment.get('phonNumber').valid && frmPayment.get('phonNumber').dirty">PhonNumber is invalid.</small>
         <div  class="p-inputgroup">
             <span class="p-inputgroup-addon">
                 <i class="pi pi-at"></i>

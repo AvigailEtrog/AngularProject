@@ -14,7 +14,9 @@ export class CartComponent {
 constructor(private prodCartSrv:ProductCartService,private router: Router) {}
 
 ngOnInit(){
-  this.prodCartSrv.getProductCart().subscribe(prod=>this.presentsInCart=prod); }
+  this.prodCartSrv.getProductCart().subscribe(prod=>this.presentsInCart=prod);
+ 
+}
 
 DeleteFromoCart(item:ProductCart){
   this.prodCartSrv.deleteProductFromCart(item).subscribe(res=>{

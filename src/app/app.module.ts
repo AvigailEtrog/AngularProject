@@ -33,6 +33,8 @@ import { ReportComponent } from './components/report/report.component';
 import { DataViewModule } from 'primeng/dataview';
 import { InputMaskModule } from 'primeng/inputmask';
 import { KeyFilterModule } from 'primeng/keyfilter';
+import { CarouselModule } from 'primeng/carousel';
+import { CardModule } from 'primeng/card';
 // import { ImageUploadComponent } from './components/image-upload/image-upload.component';
 // import { ImageDisplayComponent } from './components/image-display/image-display.component';
 
@@ -76,7 +78,9 @@ import { KeyFilterModule } from 'primeng/keyfilter';
         RouterModule,
         DataViewModule,
         InputMaskModule,
-        KeyFilterModule
+        KeyFilterModule,
+        CarouselModule,
+        CardModule
   ],
   providers: [ConfirmationService],
   bootstrap: [AppComponent]

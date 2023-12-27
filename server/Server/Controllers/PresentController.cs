@@ -15,12 +15,11 @@ namespace Server.Controllers
     {
         static List<Present> presentsList = new List<Present>() 
         {
-            new Present() { Id = 1, Name = "apartment", Donor = "32644789", Price = 50,Image="assets/image/בית.jpg" } ,
-            new Present() { Id = 2, Name = "Frizer", Donor = "76556777", Price = 10 } ,
-            new Present() { Id = 3, Name = "Computer", Donor = "54454555", Price = 20 },
-            new Present() { Id = 4, Name = "Camera", Donor = "76556777", Price = 30 },
-            new Present() { Id = 5, Name = "ChildrenRoom", Donor = "75675675", Price = 30 },
-            new Present() { Id = 6, Name = "car", Donor = "54454555", Price = 50 }
+            new Present() { Id = 1, Name = "apartment", Donor = "32644789", Price = 50,Image="בית.jpg" } ,
+            new Present() { Id = 2, Name = "Computer", Donor = "54454555", Price = 20,Image="מחשב נייד.jpg" },
+            new Present() { Id = 3, Name = "Camera", Donor = "76556777", Price = 30,Image="מצלמה.jpg" },
+            new Present() { Id = 4, Name = "ChildrenRoom", Donor = "75675675", Price = 30,Image="חדר ילדים.jpg" },
+            new Present() { Id = 5, Name = "car", Donor = "54454555", Price = 50,Image="רכב.jpg" }
         };
 
         // GET: api/<PresentController>

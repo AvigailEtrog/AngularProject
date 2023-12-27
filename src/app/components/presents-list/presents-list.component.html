@@ -35,6 +35,7 @@
                 <th pSortableColumn="name">Name<p-sortIcon field="name"></p-sortIcon></th>
                 <th pSortableColumn="donor">Donor<p-sortIcon field="donor"></p-sortIcon></th>
                 <th pSortableColumn="price">Price<p-sortIcon field="price"></p-sortIcon></th>
+                  <th pSortableColumn="Image">Image<p-sortIcon field="Image"></p-sortIcon></th>
                 <th></th>
             </tr>
         </ng-template>
@@ -47,6 +48,7 @@
                     <td>{{item.name}}</td>
                     <td>{{item.donor}}</td>
                     <td>{{item.price}}</td>
+                    <td><img [src]="'/assets/image/' + item.image"></td>
                     <td>
                         <button pButton pRipple icon="pi pi-pencil" class="p-button-rounded p-button-success mr-2"
                         (click)="savePresent(item.id)"></button>

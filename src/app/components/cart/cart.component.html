@@ -1,15 +1,24 @@
 <button pButton pRipple title="for paying" icon="pi pi-credit-card" class="p-button-success mr-2" (click)="paying()"></button>
 <button pButton pRipple title="delete" icon="pi pi-trash" class="p-button-success mr-2" (click)="deleteAll()"></button>
 <button pButton pRipple title="back to presents purchase" icon="pi pi-backward" class="p-button-success mr-2" (click)="back()"></button>
-<div class="my-css" >
-    <p-toolbar styleClass="mb-6" *ngFor="let item of presentsInCart" [style]="{borderColor:'green',color:'green',boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2)',fontFamily: 'cursive' ,width: '215px',margin: '15px',textAlign: 'center',
-     padding: '10px',display:'flex',float: 'left', height: '200px',textAlign:'center'}" >
-          <span class="title">{{item.present.name}}</span>
-          <span>Present Price :{{item.present.price}}</span>
-          <span>Quantity:{{item.quantity}}</span>
-          <button pButton pRipple label="Delete" icon="pi pi-plus" class="p-button-success mr-2" (click)="DeleteFromoCart(item)"></button>
-    </p-toolbar>
-    <h1 *ngIf="presentsInCart.length==0">There is no presents in your cart, please return back↩</h1>
-</div>
+<p-card header="{{product.present.name}}" *ngFor="let product of presentsInCart" >
+    <div class="col-12">
+        <div class="flex flex-column xl:flex-row xl:align-items-start p-4 gap-4">
+            <img class="w-9 sm:w-16rem xl:w-10rem shadow-2 block xl:block mx-auto border-round" [src]="'/assets/image/' + product.present.image" [alt]="product.name" />
+            <div class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
+                <div class="flex flex-column align-items-center sm:align-items-start gap-3">
+                    <div class="flex align-items-center gap-3">
+                     
+                    </div>
+                </div>
+                <div class="flex sm:flex-column align-items-center sm:align-items-end gap-3 sm:gap-2">
+                    <span class="text-2xl font-semibold">{{ '$' + product.present.price }}</span>
+                    <span class="text-2xl font-semibold">Quantity:{{ product.quantity }}</span>
+                     <button pButton pRipple label="Delete" icon="pi pi-shopping-cart" class="p-button-success mr-2" (click)="DeleteFromoCart(product)"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</p-card>
+<h1 *ngIf="presentsInCart.length==0">There is no presents in your cart, please return back↩</h1>
 
-<app-payment [(isDialog)]="isDialog"></app-payment>

@@ -75,3 +75,14 @@ p-inputmask.ng-dirty.ng-invalid > .p-inputtext{
 p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
    border-color: orange;
 }
+img{
+   width: 170px;
+   height: 124px;
+}
+.w-9{
+  width: 250px !important;
+   height: 180px;
+}
+.p-card .p-card-body{
+   margin: 1.25rem
+}

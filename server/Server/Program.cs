@@ -10,12 +10,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IOrdersController, OrdersController>();
 
-builder.Services.AddCors(options =>//ìàéæä ãåîééï - ôåøè éàôùø ìâùú
+builder.Services.AddCors(options =>//×œ××™×–×” ×“×•×ž×™×™×Ÿ - ×¤×•×¨×˜ ×™××¤×©×¨ ×œ×’×©×ª
 {
     options.AddPolicy("CorsPolicy",
         builder =>
         {
-            builder.WithOrigins("http://localhost:4200",
+            builder.WithOrigins("http://localhost:49213",
                 "development web site").AllowAnyHeader().AllowAnyMethod();
         });
 });

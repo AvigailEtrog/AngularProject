@@ -25,18 +25,17 @@ export class PaymentComponent {
   id:number=0;
   payment:number=0
   myCart:ProductCart[]=[]
-  numbersReg: RegExp = new RegExp('0-9')
-  phoneReg: RegExp = new RegExp('[0-9]-[0-9]')
+
 
 
   constructor(private router:Router,private prodCartSrv:ProductCartService,private ordSrv:OrdersService) {
     this.frmPayment=new FormGroup({
       userName:new FormControl('',[Validators.required]),
-      phonNumber:new FormControl('',[Validators.required]),
+      phonNumber:new FormControl('', [Validators.required, Validators.pattern('^(\\+?\d{1,4}[\s-])?(?!0+\s+,?$)\\d{10}\s*,?$')]),
       email:new FormControl('',[Validators.required, Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]),
       address:new FormControl(''),
       cardNumber:new FormControl('',[Validators.required,Validators.minLength(16),Validators.maxLength(20)]),
-      cvc:new FormControl('',[Validators.required,Validators.minLength(3),Validators.maxLength(3),Validators.pattern(this.numbersReg)]),
+      cvc:new FormControl('',[Validators.required,Validators.minLength(3),Validators.maxLength(3)]),
       validity:new FormControl('',[Validators.required]),
       identity:new FormControl('',[Validators.required,Validators.minLength(9),Validators.maxLength(9)]),
     })
